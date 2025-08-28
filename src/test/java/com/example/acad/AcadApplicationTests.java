@@ -1,13 +1,19 @@
 package com.example.acad;
 
+import com.example.acad.domain.entity.exception.repository.entity.Cliente;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-@SpringBootTest
+
+@ExtendWith(MockitoExtension.class)
 class AcadApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void deveSalvarCliente() {
+
+		Cliente cliente = new Cliente();
+
 	}
 
 }
