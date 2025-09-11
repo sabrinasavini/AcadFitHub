@@ -1,4 +1,4 @@
-package com.example.acad.domain.entity.exception.repository.entity;
+package com.example.acad.domain.entity;
 
 
 import jakarta.persistence.*;

@@ -1,7 +1,5 @@
 package com.example.acad.application.dto;
 
-import com.example.acad.domain.entity.exception.repository.entity.Cliente;
-
 import java.time.LocalDate;
 
 public record ClienteDTO(
