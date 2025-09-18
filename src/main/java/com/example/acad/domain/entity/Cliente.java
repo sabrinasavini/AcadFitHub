@@ -10,17 +10,18 @@ import java.time.LocalDate;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorValue("cliente")
 @Data
+@Builder
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     private String nome;
     private String email;
     private String telefone;
     private String endereco;
     private String tipoDePlano;
     private String fichaTreino;
-    private int valorPlano;
+    private Double valorPlano;
     private LocalDate dataInicio;
     private LocalDate dataVencimento;
     }
