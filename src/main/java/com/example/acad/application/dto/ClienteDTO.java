@@ -36,7 +36,7 @@ public record ClienteDTO(
         @Schema(description = "Ficha de treino do cliente")
         String fichaTreino,
 
-        @DecimalMin(value = "105.0", message = "Você deve inserir um valor válido")
+        @DecimalMin(value = "95.0", message = "Você deve inserir um valor válido")
         @Schema(description = "Valor do plano contratado")
         Double valorPlano,
 

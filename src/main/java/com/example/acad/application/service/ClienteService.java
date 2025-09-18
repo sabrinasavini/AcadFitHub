@@ -4,9 +4,12 @@ import com.example.acad.application.dto.ClienteDTO;
 import com.example.acad.domain.entity.Cliente;
 import com.example.acad.domain.exception.ClienteNaoEncontradoException;
 import com.example.acad.domain.repository.ClienteRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+
+@Service
 public class ClienteService {
     private final ClienteRepository repository;
 

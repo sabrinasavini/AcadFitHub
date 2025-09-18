@@ -47,7 +47,7 @@ public class ClienteIntegrationTest {
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(dto)))
                 .andExpect(status().isCreated())
-                .andExpect(jsonPath("$.nome").value("Tainá Silva")) // Correção aqui!
+                .andExpect(jsonPath("$.nome").value("Tainá Silva"))
                 .andExpect(jsonPath("$.email").value("taina.silva@email.com"));
     }
 
