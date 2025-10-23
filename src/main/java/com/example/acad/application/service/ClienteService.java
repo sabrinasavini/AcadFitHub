@@ -46,7 +46,7 @@ public class ClienteService {
         repository.deleteById(id);
     }
     public List<ClienteDTO> buscarPorNome(String nome) {
-        return repository.findByNome(nome)
+        return repository.findByNomeContainingIgnoreCase(nome)
                 .stream()
                 .map(ClienteDTO::fromEntity)
                 .toList();

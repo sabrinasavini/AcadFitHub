@@ -8,7 +8,7 @@ import java.util.List;
 
 @Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Long> {
-    List<Cliente> findByNome(String nome);
+    List<Cliente> findByNomeContainingIgnoreCase(String nome);
     List<Cliente> findByTipoDePlano(String tipoDePlano);
 
 }

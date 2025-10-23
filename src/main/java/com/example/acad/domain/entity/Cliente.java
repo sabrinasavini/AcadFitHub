@@ -9,6 +9,9 @@ import java.time.LocalDate;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorValue("cliente")
+@EqualsAndHashCode(callSuper = false)
+@NoArgsConstructor
+@AllArgsConstructor
 @Data
 @Builder
 public class Cliente {
